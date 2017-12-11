@@ -1,0 +1,15 @@
+Instalación y configuración de tu repositorio de GitHub 
+
+1. Crear la llave ssh asociada con tu cuenta de GitHub. (https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+2. Abre una terminal en linux/mac OX y en el área de home, sin entrar a ninguna carpeta, teclea lo siguiente: 
+        1. ssh-keygen -t rsa -b 4096 -C "isapedraza@hotmail.com"                                    (Esto generara dos archivos en el folder .ssh/
+        2. En GitHub ve a Personal Settings -> SSH and GPG keys. Selecciona el nombre de la llave (el nombre que quieras darle) y en la ventana que dice Key copia el contenido del archivo que creaste en el paso anterior .ssh/id_rsa.pub.
+3. Para añadir el repositorio de la primera tarea a tu área de trabajo sigue los siguientes pasos. 
+    1. Crea el directorio en el que vas a trabajar : mkdir Midirectorio
+    2. Entra al directorio cd Midirectorio 
+    3. Escribe en la línea de comando lo siguiente : git clone git@github.com:FisicaComputacionalI/plot-with-python-githublogin.git
+    4. Configura tu cuenta de GitHub : git config —global user.email “tulogin@correo.com”
+    5. Después de modificar los archivos necesarios y que ya quieras subir el resultado final das : git *
+    6. En caso de que que quieras añadir un archivo nuevo teclea : git add NombreDelArchivo.XX
+    7. Para poder guardar los cambios necesitas confirmar los cambios haciendo : git commit -m “el comentario describiendo la modificación”
+    8. Después se suben las modificaciones al repositorio con : git push

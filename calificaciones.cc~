@@ -1,0 +1,46 @@
+//Adriana Tapia Ramìrez
+//06 noviembre 2017
+
+#include <iostream>
+using namespace std;
+int main ( ) {
+char cal;
+float  participacion, tareas, examen, cal<=10;
+cout<<"Calificacion de examen"<<endl; 
+cin>>examen;
+ cout<<"Calificacion de tareas"<<endl; 
+cin>>tareas;
+cout<<"Calificacion de participacion"<<endl; 
+cin>>participacion;
+
+participacion=participacion*0.15;
+tareas=tareas*0.15;
+
+switch(cal) {
+case 'A':  if(cal<8)
+else{
+cal=examen*0.7+participacion+tareas;
+}
+ cout<<"Tu calificacion final es:"<<<<endl
+cin>>cal; break;
+
+case 'B': if (cal=>8 and tareas=0 and participacion=0)
+else {
+cal=examen;
+}
+ cout<<"Tu calificacion final es:"<<endl;
+cin>>examen;break;
+
+case 'C' : if(cal=>8 and tareas>0)
+else{
+cal=examen*0.85 + tareas;
+}
+ cout<<"Tu calificacion final es:"<<endl;
+cin>>cal; break;
+
+case 'D' : if (cal=>8 and participacion>0)
+
+return 0;
+}
+}
+
